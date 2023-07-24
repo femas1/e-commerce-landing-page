@@ -1,9 +1,9 @@
 import React from 'react';
+import Cart from './Cart';
 import logo from '../images/logo.svg';
-import cart from '../images/icon-cart.svg';
 import avatar from '../images/image-avatar.png';
 
-const Navbar = () => {
+const Navbar = ({ itemQty, setItemQty}) => {
   return (
     <>
     <nav className='navbar'>
@@ -20,9 +20,7 @@ const Navbar = () => {
             </div>
         </div>
         <div className="cart-avatar">
-            <a href="#" className="cart">
-                <img src={cart} alt="" />
-            </a>
+            <Cart itemQty={itemQty} setItemQty={setItemQty}/>
             <a href="#" className="avatar">
                 <img className="image-avatar" src={avatar} alt="" />
             </a>

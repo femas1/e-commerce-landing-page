@@ -3,7 +3,7 @@ import React from 'react';
 const QuantityInput = () => {
   return (
     <>
-        <input type="number" /> 
+        <input type="number" min={0}/> 
     </>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import QuantityInput from './QuantityInput';
 import AddToCartButton from './AddToCartButton'
 
-const ProductDescription = () => {
+const ProductDescription = ({ itemQty, setItemQty}) => {
   return (
     <div className='product-description'>
       <h4 className='brand'>Sneaker Company</h4>
@@ -15,7 +15,7 @@ const ProductDescription = () => {
         <h3 className="old-price">$250.00</h3>
     <div className="quantity">
         <QuantityInput />
-        <AddToCartButton />
+        <AddToCartButton itemQty={itemQty} setItemQty={setItemQty}/>
     </div>
     </div>
   )
