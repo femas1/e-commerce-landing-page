@@ -13,4 +13,4 @@ const ProductDetailPage = ({ itemQty, setItemQty}) => {
   )
 }
 
-export default ProductDetailPage
+export default ProductDetailPage;

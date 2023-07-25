@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import QuantityInput from './QuantityInput';
 import AddToCartButton from './AddToCartButton'
 
 const ProductDescription = ({ itemQty, setItemQty}) => {
+
+  const [inputValue, setInputValue] = useState(0);
+
   return (
     <div className='product-description'>
       <h4 className='brand'>Sneaker Company</h4>
@@ -14,8 +17,8 @@ const ProductDescription = ({ itemQty, setItemQty}) => {
       </div>
         <h3 className="old-price">$250.00</h3>
     <div className="quantity">
-        <QuantityInput />
-        <AddToCartButton itemQty={itemQty} setItemQty={setItemQty}/>
+        <QuantityInput inputValue={inputValue} setInputValue={setInputValue}/>
+        <AddToCartButton itemQty={itemQty} setItemQty={setItemQty} inputValue={inputValue}/>
     </div>
     </div>
   )
