@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 
 function App() {
   
-  const [itemQty, setItemQty] = useState(0);
+  const [itemQty, setItemQty] = useState(null);
 
   return (
     <>
