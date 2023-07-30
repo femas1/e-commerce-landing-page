@@ -14,10 +14,11 @@ const Cart = ({ itemQty, setItemQty}) => {
          className="cart"
       >
         <img src={cart} 
-           alt="cart-icon" 
+           alt="cart-icon"
+           id="cart-icon" 
         />
       </a> 
-        <p>{itemQty}</p>
+        <p id="item-qty">{itemQty}</p>
       {seeCart && <div className="dropdown-menu">
         Your cart is empty.
       </div>}
