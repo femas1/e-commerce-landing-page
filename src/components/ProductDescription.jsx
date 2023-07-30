@@ -4,7 +4,7 @@ import AddToCartButton from './AddToCartButton'
 
 const ProductDescription = ({ itemQty, setItemQty}) => {
 
-  const [inputValue, setInputValue] = useState(null);
+  const [inputValue, setInputValue] = useState(" ");
 
   return (
     <div className='product-description'>

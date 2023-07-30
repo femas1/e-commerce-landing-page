@@ -1,21 +1,33 @@
+import { useState } from 'react';
 import cart from '../images/icon-cart.svg';
 
 
 const Cart = ({ itemQty, setItemQty}) => {
   
-    
+    const [seeCart, setSeeCart] = useState(false);
     
     return (
     <>
-     <a href="#" className="cart">
-                <img src={cart} alt="" />
-            </a> 
-                <p>{itemQty}</p>
+    <div className="dropdown">
+      <a onClick={() => setSeeCart(!seeCart)} 
+         href="#" 
+         className="cart"
+      >
+        <img src={cart} 
+           alt="cart-icon" 
+        />
+      </a> 
+        <p>{itemQty}</p>
+      {seeCart && <div className="dropdown-menu">
+        Your cart is empty.
+      </div>}
+      
+    </div>
+     
     </>
   )
 }
 
 export default Cart;
 
-// 1. set quantity to 0
-// 2. click on button and increase quantity based on number in input
+
