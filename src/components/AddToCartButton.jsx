@@ -5,7 +5,7 @@ const AddToCartButton = ({ itemQty, setItemQty, inputValue}) => {
   return (
     <>
         <button className='btn' 
-              onClick={() => {setItemQty(itemQty + inputValue)}}
+              onClick={() => {inputValue > 0 && setItemQty(itemQty + inputValue)}}
         >
             <img className='cart-icon' src={cartIcon}/>
             Add to cart
