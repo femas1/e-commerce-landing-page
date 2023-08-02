@@ -27,7 +27,12 @@ const Cart = ({ itemQty, setItemQty}) => {
           <div className="cart-item">
           <img src={imageProduct} alt="" className="cart-item__picture" />
           <h5 className="cart-item__title">Fall Limited Edition Sneakers $125.00 x {itemQty} <span className='bold'>${125*itemQty}.00</span></h5>
-          <img src={deleteIcon} alt="" className="cart-item__delete-icon" />
+          <img 
+                src={deleteIcon} 
+                alt="delete-icon" 
+                className="cart-item__delete-icon"
+                onClick={() => {setItemQty(0)}}
+          />
           </div>
         <button className="btn" id='btn-checkout'>Checkout</button>
         </div>}
