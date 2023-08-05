@@ -31,6 +31,12 @@
     color: hsl(219, 9%, 45%);
 }
 
+.links > a:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    padding-bottom: 2rem;
+    
+}
+
 .cart-avatar {
     display: flex;
     align-items: center;
@@ -38,6 +44,11 @@
 
 .image-avatar {
     max-height: 3rem;
+    border-radius: 100px;
+}
+
+.image-avatar:hover {
+    border: 3px solid hsl(26, 100%, 55%);
 }
 
 #cart-icon {
