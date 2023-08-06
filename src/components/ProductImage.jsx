@@ -14,13 +14,14 @@ import thumbnailFour from '../images/image-product-4-thumbnail.jpg'
 const ProductImage = () => {
 
   const [toggler, setToggler] = useState(false);
+  const [mainImage, setMainImage] = useState(imageOne);
 
   return (
     <div className='product-image'>
       <div className="images">
         <div className="main">
             <img 
-                  src={imageOne} 
+                  src={mainImage} 
                   alt="" 
                   className="main-img"
                   onClick={() => setToggler(!toggler)}
@@ -36,10 +37,30 @@ const ProductImage = () => {
 			/>
         </div>
         <div className="thumbnails">
-            <img src={thumbnailOne} alt="" className="thumbnail-1" />
-            <img src={thumbnailTwo} alt="" className="thumbnail-2" />
-            <img src={thumbnailThree} alt="" className="thumbnail-3" />
-            <img src={thumbnailFour} alt="" className="thumbnail-4" />
+            <img 
+                  src={thumbnailOne} 
+                  alt="" 
+                  className="thumbnail-1"
+                  onClick={() => setMainImage(imageOne)}
+            />
+            <img 
+                  src={thumbnailTwo} 
+                  alt="" 
+                  className="thumbnail-2" 
+                  onClick={() => setMainImage(imageTwo)}
+            />
+            <img 
+                  src={thumbnailThree} 
+                  alt="" 
+                  className="thumbnail-3" 
+                  onClick={() => setMainImage(imageThree)}
+            />
+            <img 
+                  src={thumbnailFour} 
+                  alt="" 
+                  className="thumbnail-4" 
+                  onClick={() => setMainImage(imageFour)}
+            />
         </div>
       </div>
     </div>
