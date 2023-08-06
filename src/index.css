@@ -15,6 +15,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.app {
+  position: relative;
+}
+
 .bold {
   font-weight: 700;
   color: black;
