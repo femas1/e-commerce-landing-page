@@ -127,14 +127,20 @@
 .product-detail-page {
     width: 80vw;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-detail-page > div {
     flex: 0 50%;
-    margin: 5rem 0;
 }
 
+@media (max-width: 920px) {
+    .product-detail-page > div {
+        flex: 1;
+   }
+}
 /* PRODUCT IMAGE  */
 
 .images {
@@ -144,6 +150,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    align-self: center;
 }
 
 .main-img {
