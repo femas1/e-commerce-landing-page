@@ -37,7 +37,7 @@ const Cart = ({ itemQty, setItemQty}) => {
         <button className="btn" id='btn-checkout'>Checkout</button>
         </div>}
         
-        {itemQty === 0 && "Your cart is empty."}
+        {itemQty === 0 && <p className='empty-cart'>Your cart is empty.</p>}
       </div>}
       
     </div>

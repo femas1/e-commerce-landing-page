@@ -15,7 +15,7 @@ const QuantityInput = ({ inputValue, setInputValue}) => {
 
 
   return (
-    <>
+    <div className='quantity-input'>
         <button 
             className="btn" 
             id="decrease-btn"
@@ -32,7 +32,7 @@ const QuantityInput = ({ inputValue, setInputValue}) => {
               id="increase-btn"
               onClick={increaseValue}
         >+</button>
-    </>
+    </div>
   )
 }
 
