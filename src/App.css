@@ -69,7 +69,7 @@
     
 }
 
-@media (max-width: 640px) {
+@media (max-width: 998px) {
     .links > a:hover {
         padding-bottom: 0rem;
     }
@@ -118,6 +118,7 @@
 
 .dropdown {
     position: relative;
+    z-index: 1000;
 }
 
 .dropdown-menu {
@@ -265,6 +266,22 @@
 }
 
 /* BUTTON QUANTITY  */
+
+input {
+    appearance: textfield;
+    border: none;
+    background-color: hsl(223, 64%, 98%);
+    height: 22px;
+    width: 75px;
+    align-self: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+input:focus {
+    outline: none;
+}
+
 .quantity {
     display: flex;
 }
@@ -284,4 +301,13 @@
     font-weight: 700;
     border: none;
     border-radius: 10px;
+}
+
+#decrease-btn,
+#increase-btn {
+    border-radius: 5px;
+    padding: 9px;
+    align-self: center;
+    background-color: hsl(223, 64%, 98%);
+    color: hsl(26, 100%, 55%);
 }
